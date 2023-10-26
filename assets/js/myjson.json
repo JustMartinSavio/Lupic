@@ -1,0 +1,68 @@
+{
+    "Gusanito": {
+        "Category": "Game",
+        "Client": "...",
+        "Project_Date": "...",
+        "Project_URL": "...",
+        "Titulo":"Rolando",
+        "Texto_Descripcion": "Rolando is a bug that rolls into adventure, help him get through all the challenges ahead and set him free",
+        "Videos":"...",
+        "Imagenes": [
+            "assets/img/portfolio/portfolio-details1-test.png",
+            "assets/img/portfolio/portfolio-details2-test.png"
+        ]
+    },
+
+    "Depto": {
+        "Category": "VR Project",
+        "Client": "...",
+        "Project_Date": "...",
+        "Project_URL": "...",
+        "Titulo":"VR Apartment",
+        "Texto_Descripcion": "3D apartment made entirely from scratch to showcase and demonstrate the spacious places it is. It's made in Unreal Engine 5 for a complete VR Experience",
+        "Videos":"<iframe width=\"800\" height=\"450\" src=\"https://www.youtube-nocookie.com/embed/gY16zIUGQ4o?si=h6ZkiYVbJn7fLLL6&amp;controls=0&amp;start=11\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+        "Imagenes": [
+
+            "assets/img/portfolio/depto1.jpg",
+            "assets/img/portfolio/depto2.jpg"
+            
+        ]
+    }
+    ,
+
+    "Fauna": {
+
+        "Category": "VR Experience - Project",
+        "Client": "Tecnópolis - Ministerio de Ciencia y Cultura",
+        "Project_Date": "7/16/23",
+        "Project_URL": "...",
+        "Titulo":"Fauna Marina Malvinas VR",
+        "Texto_Descripcion": "Project made to demonstrate the living fauna in the outskirts of the Malvines Isles ",
+        "Videos":"<iframe width=\"800\" height=\"450\" src=\"https://www.youtube.com/embed/yggTbgR5nKE?si=KaCbmoK7ZDN15gZh\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+        "Imagenes": [
+
+            "assets/img/portfolio/fauna_slider1.png",
+            "assets/img/portfolio/fauna_slider2.png"
+
+        ]
+    },
+
+    "Cuevas": {
+
+        "Category": "VR Experience - Project",
+        "Client": "Tecnópolis - Ministerio de Ciencia y Cultura",
+        "Project_Date": "7/16/23",
+        "Project_URL": "...",
+        "Titulo":"Mensajes de Nuestro Pasado VR",
+        "Texto_Descripcion": "This project was made to showcase the art in the caves from our ancestors from the north",
+        "Videos":"<iframe width=\"800\" height=\"450\" src=\"https://www.youtube.com/embed/fwSKPR7mhi8?si=mWZwKj0vSAugdaGh\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+        "Imagenes": [
+
+            "assets/img/portfolio/cuevas_slider1.png",
+            "assets/img/portfolio/cuevas_slider2.png"
+
+        ]
+
+
+    }
+}
