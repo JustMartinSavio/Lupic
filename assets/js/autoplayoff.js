@@ -1,15 +1,9 @@
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".swiper", {
     spaceBetween: 30,
+    direction: 'vertical',
     mousewheel: true,
-    hashNavigation: {
-      watchState: true,
-    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+    }
   });

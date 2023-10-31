@@ -11,17 +11,30 @@ function ProcessJson(varjson) {
     var VRbannerEntity = document.getElementById('bannerVRexperience');
     var TarjetaPortfolioEntity = this.document.getElementById('TarjetaPortfolio')
 
+    if (/Mobi/.test(navigator.userAgent)) {
+      // User is on a mobile device, do nothing (don't hide AFrameEntity)
+  } else {
+      // User is not on a mobile device, hide AFrameEntity
+      VRbannerEntity.style.display = 'none';
+  }
+
+
+    //Hide Canvas Container if empty
+    AFrameEntity.children.length <= 0 ? AFrameEntity.classList.add('empty') : ""
+
     // Set the image source based on the parameter
     if (imageParam === 'fauna') {
       document.documentElement.style.overflow = 'auto';
       document.body.style.overflow = 'auto';
-      var imageHTML = '<div class="swiper-slide">' + varjson.Fauna.Videos + '</div>';
+      var imageHTML = '';
+      var videoHTML = '<div class="swiper-slide">' + varjson.Fauna.Videos + '</div>';
       var faunaImages = varjson.Fauna.Imagenes;
       for (var i = 0; i < faunaImages.length; i++) {
         imageHTML += `<div class="swiper-slide">
         <img src="` + faunaImages[i] + `" alt="">
         </div>`;
       }
+      imageHTML += videoHTML;
       main_sliderEntity.innerHTML = imageHTML
       // Relleno el div contenedor_canvas con el A Frame
       AFrameEntity.innerHTML = `<a-scene class="image360test">
@@ -104,7 +117,8 @@ function ProcessJson(varjson) {
       textEntity.innerHTML = `<h2>` + varjson.Cuevas.Titulo + `</h2>  <p>` + varjson.Cuevas.Texto_Descripcion + `</p>`
 
     } else if (imageParam === 'gusanito') {
-      var imageHTML = '<div class="swiper-slide">' + varjson.Gusanito.Videos + '</div>';
+      var imageHTML = '';
+      var videoHTML = '<div class="swiper-slide">' + varjson.Gusanito.Videos + '</div>';
       var gusanitoImages = varjson.Gusanito.Imagenes;
       for (var i = 0; i < gusanitoImages.length; i++) {
         imageHTML += `<div class="swiper-slide">
@@ -113,18 +127,21 @@ function ProcessJson(varjson) {
                 
         </div>`;
       }
+      imageHTML += videoHTML;
       main_sliderEntity.innerHTML = imageHTML
       // Aca completo el texto del portfolio detail
       textEntity.innerHTML = `<h2>` + varjson.Gusanito.Titulo + `</h2> <p>` + varjson.Gusanito.Texto_Descripcion + `</p>`
 
     } else if (imageParam === 'depto') {
-      var imageHTML = '<div class="swiper-slide">' + varjson.Depto.Videos + '</div>';
+      var imageHTML = '';
+      var videoHTML = '<div class="swiper-slide">' + varjson.Depto.Videos + '</div>';
       var deptoImages = varjson.Depto.Imagenes;
       for (var i = 0; i < deptoImages.length; i++) {
         imageHTML += `<div class="swiper-slide">
         <img src="` + deptoImages[i] + `" alt="">       
         </div>`;
       }
+      imageHTML += videoHTML
       main_sliderEntity.innerHTML = imageHTML
       textEntity.innerHTML = `<h2>` + varjson.Depto.Titulo + `</h2> <p>` + varjson.Depto.Texto_Descripcion + `</p>`
     }
