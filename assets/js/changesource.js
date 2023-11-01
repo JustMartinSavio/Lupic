@@ -18,9 +18,8 @@ function ProcessJson(varjson) {
       VRbannerEntity.style.display = 'none';
   }
 
-
     //Hide Canvas Container if empty
-    AFrameEntity.children.length <= 0 ? AFrameEntity.classList.add('empty') : ""
+    AFrameEntity.children.length <= 0 ? AFrameEntity.classList.add('empty') : "";
 
     // Set the image source based on the parameter
     if (imageParam === 'fauna') {
@@ -75,13 +74,15 @@ function ProcessJson(varjson) {
       document.documentElement.style.overflow = 'auto';
       document.body.style.overflow = 'auto';
       //Esta es la slide del video
-      var imageHTML = '<div class="swiper-slide">' + varjson.Cuevas.Videos + '</div>';
+      var imageHTML = '';
+      var videoHTML = '<div class="swiper-slide">' + varjson.Cuevas.Videos + '</div>';
       var Images = varjson.Cuevas.Imagenes;
       for (var i = 0; i < Images.length; i++) {
         imageHTML += `<div class="swiper-slide">
         <img src="` + Images[i] + `" alt="">
         </div>`;
       }
+      imageHTML += videoHTML;
       main_sliderEntity.innerHTML = imageHTML
 
       // Relleno el div contenedor_canvas con el A Frame

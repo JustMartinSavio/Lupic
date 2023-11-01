@@ -1122,13 +1122,20 @@ html.a-fullscreen .a-canvas {
   cursor: pointer;
 }
 
+.fixed-info-portfolio{
+  position: fixed;
+  max-width: 30%;
+}
+
 @media (min-width: 992px){
   .col-lg-8{
     width: 65.66667%;
   }
 }
 
-.fixed-info-portfolio{
-  position: fixed;
-  max-width: 605px;
+@media (max-width: 1024px){
+  .fixed-info-portfolio{
+    position: initial;
+    max-width: 100%;
+  }
 }
