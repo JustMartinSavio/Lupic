@@ -1139,3 +1139,11 @@ html.a-fullscreen .a-canvas {
     max-width: 100%;
   }
 }
+
+.loading{
+  display: none;
+}
+
+.sent-message{
+  display: none;
+}
